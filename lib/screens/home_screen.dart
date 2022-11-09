@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:suivi_rdv/utils/translate.dart';
 
 class HomeScreen extends StatelessWidget {
   final String title;
@@ -10,8 +11,8 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text(title),
       ),
-      body: const Center(
-        child: Text('Home Screen'),
+      body: Center(
+        child: Text(t(context)!.pageHomeWelcome),
       ),
     );
   }
