@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:suivi_rdv/utils/translate.dart';
+import 'package:iger/utils/translate.dart';
 
 class HomeScreen extends StatelessWidget {
   final String title;
@@ -9,10 +9,17 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(title),
+        title: Text(t(context)!.pageHomeTitle),
       ),
       body: Center(
-        child: Text(t(context)!.pageHomeWelcome),
+        child: Text(
+          t(context)!.pageHomeWelcome,
+          style: Theme.of(context).textTheme.headline4,
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: const Icon(Icons.add),
       ),
     );
   }
