@@ -89,13 +89,13 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "com_gouale_suivi_rdv" "\0"
+            VALUE "CompanyName", "com.gouale." "\0"
+            VALUE "FileDescription", "suivi_rdv" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "com_gouale_suivi_rdv" "\0"
-            VALUE "LegalCopyright", "Copyright (C) 2022 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "com_gouale_suivi_rdv.exe" "\0"
-            VALUE "ProductName", "com_gouale_suivi_rdv" "\0"
+            VALUE "InternalName", "suivi_rdv" "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2022 com.gouale.. All rights reserved." "\0"
+            VALUE "OriginalFilename", "suivi_rdv.exe" "\0"
+            VALUE "ProductName", "suivi_rdv" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.com_gouale_suivi_rdv">
+    package="com.gouale..suivi_rdv">
    <application
-        android:label="com_gouale_suivi_rdv"
+        android:label="suivi_rdv"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

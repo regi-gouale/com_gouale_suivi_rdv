@@ -1,10 +1,10 @@
 # Project-level configuration.
 cmake_minimum_required(VERSION 3.14)
-project(com_gouale_suivi_rdv LANGUAGES CXX)
+project(suivi_rdv LANGUAGES CXX)
 
 # The name of the executable created for the application. Change this to change
 # the on-disk name of your application.
-set(BINARY_NAME "com_gouale_suivi_rdv")
+set(BINARY_NAME "suivi_rdv")
 
 # Explicitly opt in to modern CMake behaviors to avoid warnings with recent
 # versions of CMake.

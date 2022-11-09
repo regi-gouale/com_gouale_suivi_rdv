@@ -1,6 +1,6 @@
 {
-    "name": "com_gouale_suivi_rdv",
-    "short_name": "com_gouale_suivi_rdv",
+    "name": "suivi_rdv",
+    "short_name": "suivi_rdv",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
