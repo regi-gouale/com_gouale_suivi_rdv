@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:iger/screens/login_screen.dart';
 import 'package:iger/utils/translate.dart';
 
 class WelcomeScreen extends StatelessWidget {
@@ -12,13 +13,13 @@ class WelcomeScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              t(context)!.pageHomeWelcome,
+              t(context)!.welcome,
               style: Theme.of(context).textTheme.headline3,
             ),
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: Text(
-                t(context)!.pageWelcomeOnboarding,
+                t(context)!.onboardingMessage,
                 style: Theme.of(context).textTheme.bodyText1,
                 textAlign: TextAlign.center,
               ),
@@ -39,15 +40,21 @@ class WelcomeScreen extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: ElevatedButton(
-                onPressed: () {},
-                child: Text(t(context)!.pageWelcomeLogin),
+                onPressed: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => const LoginScreen(),
+                    ),
+                  );
+                },
+                child: Text(t(context)!.loginTitle),
               ),
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: TextButton(
                 onPressed: () {},
-                child: Text(t(context)!.pageWelcomeSignUp),
+                child: Text(t(context)!.signUpTitle),
               ),
             ),
           ],

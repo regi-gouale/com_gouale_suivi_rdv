@@ -9,11 +9,11 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(t(context)!.pageHomeTitle),
+        title: Text(t(context)!.appTitle),
       ),
       body: Center(
         child: Text(
-          t(context)!.pageHomeWelcome,
+          t(context)!.welcome,
           style: Theme.of(context).textTheme.headline4,
         ),
       ),

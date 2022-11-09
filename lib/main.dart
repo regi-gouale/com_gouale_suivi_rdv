@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:iger/generated/themes/color_schemes.g.dart';
 import 'package:iger/generated/themes/font_schemes.dart';
-import 'package:iger/screens/home_screen.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:iger/screens/welcome_screen.dart';
 

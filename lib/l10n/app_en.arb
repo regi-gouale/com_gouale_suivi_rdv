@@ -1,8 +1,20 @@
 {
-    "pageHomeConfirm": "Confirm",
-    "pageHomeWelcome": "Welcome",
-    "pageHomeTitle": "Appointment Tracking",
-    "pageWelcomeOnboarding": "Our commitment is to make it easy for you to manage your conversations.",
-    "pageWelcomeLogin": "Login",
-    "pageWelcomeSignUp": "Sign up"
+    "confirm": "Confirm",
+    "welcome": "Welcome",
+    "appTitle": "Appointment Tracking",
+    "onboardingMessage": "Our commitment is to make it easy for you to manage your conversations.",
+    "loginTitle": "Login",
+    "loginMessage": "Please enter your credentials to login.",
+    "signUpTitle": "Sign up",
+    "signUpMessage": "Please enter your credentials to sign up.",
+    "signOutTitle": "Sign out",
+    "signOutMessage": "Are you sure you want to sign out?",
+    "email": "Email",
+    "emailHint": "Enter your email",
+    "emailRequired": "Email address is required",
+    "password": "Password",
+    "passwordHint": "Enter your password",
+    "passwordRequired": "Password is required",
+    "loginSuccess": "Login successful",
+    "noAccount": "Don't have an account?"
 }
