@@ -1,5 +1,8 @@
 {
     "pageHomeConfirm": "Confirmer",
     "pageHomeWelcome": "Bienvenue",
-    "pageHomeTitle": "Suivi de Rendez-Vous"
+    "pageHomeTitle": "Suivi de Rendez-Vous",
+    "pageWelcomeOnboarding": "Notre engagement est de vous permettre de gérer facilement le suivi des entretiens que vous menez.",
+    "pageWelcomeLogin": "Connexion",
+    "pageWelcomeSignUp": "Inscription"
 }

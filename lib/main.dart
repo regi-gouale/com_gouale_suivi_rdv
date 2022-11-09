@@ -3,6 +3,7 @@ import 'package:iger/generated/themes/color_schemes.g.dart';
 import 'package:iger/generated/themes/font_schemes.dart';
 import 'package:iger/screens/home_screen.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:iger/screens/welcome_screen.dart';
 
 void main() {
   runApp(const App());
@@ -14,21 +15,22 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Suivi RDV',
+      title: 'iGer',
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         useMaterial3: true,
         colorScheme: lightColorScheme,
-        textTheme: comfortaaAppTextTheme,
+        textTheme: appTextTheme,
       ),
       darkTheme: ThemeData(
         useMaterial3: true,
         colorScheme: darkColorScheme,
-        textTheme: comfortaaAppTextTheme,
+        textTheme: appTextTheme,
       ),
-      home: const HomeScreen(title: 'RDV'),
+      // home: const HomeScreen(title: 'RDV'),
+      home: const WelcomeScreen(),
     );
   }
 }

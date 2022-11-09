@@ -1,5 +1,8 @@
 {
     "pageHomeConfirm": "Confirm",
     "pageHomeWelcome": "Welcome",
-    "pageHomeTitle": "Appointment Tracking"
+    "pageHomeTitle": "Appointment Tracking",
+    "pageWelcomeOnboarding": "Our commitment is to make it easy for you to manage your conversations.",
+    "pageWelcomeLogin": "Login",
+    "pageWelcomeSignUp": "Sign up"
 }
