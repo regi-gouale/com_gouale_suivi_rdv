@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:iger/screens/welcome_screen.dart';
+import 'package:iger/utils/on_board.dart';
+import 'package:iger/widgets/dot_indicator.dart';
+import 'package:iger/widgets/on_board_content.dart';
 
 class OnBoardingScreen extends StatefulWidget {
   const OnBoardingScreen({super.key});
@@ -53,7 +56,27 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                 bottom: 24.0,
               ),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
+                  _pageIndex == 0
+                      ? const SizedBox()
+                      : SizedBox(
+                          width: 70,
+                          height: 70,
+                          child: ElevatedButton(
+                            onPressed: () {
+                              _pageController.previousPage(
+                                duration: const Duration(milliseconds: 300),
+                                curve: Curves.easeIn,
+                              );
+                            },
+                            child: const Icon(
+                              Icons.arrow_back_ios,
+                              size: 40,
+                            ),
+                          ),
+                        ),
+                  const Spacer(),
                   ...List.generate(
                     demoData.length,
                     (index) => Padding(
@@ -101,42 +124,6 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
   }
 }
 
-class DotIndicator extends StatelessWidget {
-  const DotIndicator({
-    Key? key,
-    this.isActive = false,
-  }) : super(key: key);
-
-  final bool isActive;
-
-  @override
-  Widget build(BuildContext context) {
-    return AnimatedContainer(
-      duration: const Duration(milliseconds: 300),
-      width: 4,
-      height: isActive ? 12 : 4,
-      decoration: BoxDecoration(
-        color: isActive
-            ? Theme.of(context).primaryColor
-            : Theme.of(context).disabledColor,
-        borderRadius: BorderRadius.circular(12),
-      ),
-    );
-  }
-}
-
-class OnBoard {
-  final String title;
-  final String image;
-  final String description;
-
-  const OnBoard({
-    required this.title,
-    required this.image,
-    required this.description,
-  });
-}
-
 final List<OnBoard> demoData = [
   const OnBoard(
     title: 'Find the items you need',
@@ -159,46 +146,3 @@ final List<OnBoard> demoData = [
     description: 'The best app for managing your grocery list',
   )
 ];
-
-class OnBoardContent extends StatelessWidget {
-  const OnBoardContent({
-    Key? key,
-    required this.image,
-    required this.title,
-    required this.description,
-  }) : super(key: key);
-
-  final String image, title, description;
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: [
-        const Spacer(),
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Image.asset(
-            image,
-            width: double.infinity,
-            height: 250,
-          ),
-        ),
-        const Spacer(),
-        Text(
-          title,
-          style: Theme.of(context).textTheme.headline5,
-          textAlign: TextAlign.center,
-        ),
-        Padding(
-          padding: const EdgeInsets.symmetric(vertical: 16.0, horizontal: 16.0),
-          child: Text(
-            description,
-            style: Theme.of(context).textTheme.bodyText1,
-            textAlign: TextAlign.center,
-          ),
-        ),
-        const Spacer(),
-      ],
-    );
-  }
-}
