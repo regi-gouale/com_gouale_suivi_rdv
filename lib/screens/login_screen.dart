@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:iger/forms/login_form.dart';
+import 'package:iger/screens/signup_screen.dart';
 import 'package:iger/utils/translate.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -9,7 +10,6 @@ class LoginScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          // title:
           ),
       body: Center(
         child: Column(
@@ -18,7 +18,7 @@ class LoginScreen extends StatelessWidget {
             Image.asset(
               'assets/images/login_image.png',
               width: double.infinity,
-              height: 200,
+              height: 300,
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
@@ -41,7 +41,13 @@ class LoginScreen extends StatelessWidget {
               children: [
                 Text(t(context)!.noAccount),
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).pushReplacement(
+                      MaterialPageRoute(
+                        builder: (context) => const SignUpScreen(),
+                      ),
+                    );
+                  },
                   child: Text(t(context)!.signUpTitle),
                 ),
               ],

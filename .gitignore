@@ -42,3 +42,8 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+ios/Flutter/Flutter 2.podspec
+.flutter-plugins-dependencies 2
+.flutter-plugins 2
+ios/Flutter/flutter_export_environment 2.sh
+ios/Flutter/Generated 2.xcconfig
