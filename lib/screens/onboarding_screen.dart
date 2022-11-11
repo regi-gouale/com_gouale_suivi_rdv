@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:iger/screens/welcome_screen.dart';
+import 'package:iger/screens/home_screen.dart';
+// import 'package:iger/screens/welcome_screen.dart';
 import 'package:iger/utils/on_board.dart';
+import 'package:iger/utils/translate.dart';
 import 'package:iger/widgets/dot_indicator.dart';
 import 'package:iger/widgets/on_board_content.dart';
 
@@ -95,7 +97,9 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                         if (_pageController.page == demoData.length - 1) {
                           Navigator.of(context).pushReplacement(
                             MaterialPageRoute(
-                              builder: (context) => const WelcomeScreen(),
+                              // builder: (context) => const WelcomeScreen(),
+                              builder: (context) => const HomeScreen(
+                              ),
                             ),
                           );
                         } else {
@@ -109,14 +113,31 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                         shape: const CircleBorder(),
                       ),
                       child: const Icon(
-                        Icons.arrow_forward,
+                        Icons.arrow_forward_ios,
                         size: 40.0,
                       ),
                     ),
                   ),
                 ],
               ),
-            )
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                TextButton(
+                  onPressed: () {
+                    Navigator.of(context).pushReplacement(
+                      MaterialPageRoute(
+                        // builder: (context) => const WelcomeScreen(),
+                        builder: (context) => const HomeScreen(
+                        ),
+                      ),
+                    );
+                  },
+                  child: Text(t(context)!.skip),
+                ),
+              ],
+            ),
           ],
         ),
       ),
