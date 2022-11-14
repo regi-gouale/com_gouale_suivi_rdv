@@ -70,5 +70,10 @@
     "deleteMessageMultiple": "Are you sure you want to delete these items?",
     "team": "Team",
     "teams": "Teams",
-    "planning": "Planning"
+    "planning": "Planning",
+    "talks": "Talks",
+    "talk": "Talk",
+    "gender":  "Gender",
+    "male": "Male",
+    "female": "Female"
 }

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class DotIndicator extends StatelessWidget {
-  const DotIndicator({
+class DotIndicatorWidget extends StatelessWidget {
+  const DotIndicatorWidget({
     Key? key,
     this.isActive = false,
   }) : super(key: key);

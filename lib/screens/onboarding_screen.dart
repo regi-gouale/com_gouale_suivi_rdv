@@ -3,8 +3,8 @@ import 'package:iger/screens/home_screen.dart';
 // import 'package:iger/screens/welcome_screen.dart';
 import 'package:iger/utils/on_board.dart';
 import 'package:iger/utils/translate.dart';
-import 'package:iger/widgets/dot_indicator.dart';
-import 'package:iger/widgets/on_board_content.dart';
+import 'package:iger/widgets/dot_indicator_widget.dart';
+import 'package:iger/widgets/on_board_content_widget.dart';
 
 class OnBoardingScreen extends StatefulWidget {
   const OnBoardingScreen({super.key});
@@ -44,7 +44,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                     _pageIndex = value;
                   });
                 },
-                itemBuilder: (context, index) => OnBoardContent(
+                itemBuilder: (context, index) => OnBoardContentWidget(
                   title: demoData[index].title,
                   image: demoData[index].image,
                   description: demoData[index].description,
@@ -83,7 +83,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                     demoData.length,
                     (index) => Padding(
                       padding: const EdgeInsets.only(right: 4.0),
-                      child: DotIndicator(
+                      child: DotIndicatorWidget(
                         isActive: index == _pageIndex,
                       ),
                     ),
@@ -98,8 +98,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                           Navigator.of(context).pushReplacement(
                             MaterialPageRoute(
                               // builder: (context) => const WelcomeScreen(),
-                              builder: (context) => const HomeScreen(
-                              ),
+                              builder: (context) => const HomeScreen(),
                             ),
                           );
                         } else {
@@ -129,8 +128,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                     Navigator.of(context).pushReplacement(
                       MaterialPageRoute(
                         // builder: (context) => const WelcomeScreen(),
-                        builder: (context) => const HomeScreen(
-                        ),
+                        builder: (context) => const HomeScreen(),
                       ),
                     );
                   },

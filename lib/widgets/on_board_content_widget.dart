@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class OnBoardContent extends StatelessWidget {
-  const OnBoardContent({
+class OnBoardContentWidget extends StatelessWidget {
+  const OnBoardContentWidget({
     Key? key,
     required this.image,
     required this.title,

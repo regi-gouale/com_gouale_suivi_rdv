@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:iger/utils/translate.dart';
 import 'package:iger/views/home_view.dart';
+import 'package:iger/views/team_view.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -47,19 +48,8 @@ class _HomeScreenState extends State<HomeScreen> {
       body: IndexedStack(
         index: _currentViewIndex,
         children: [
-          // Center(
-          //   child: Text(
-          //     t(context)!.home,
-          //     style: Theme.of(context).textTheme.headline4,
-          //   ),
-          // ),
           const HomeView(),
-          Center(
-            child: Text(
-              t(context)!.teams,
-              style: Theme.of(context).textTheme.headline4,
-            ),
-          ),
+          const TeamView(),
           Center(
             child: Text(
               t(context)!.planning,

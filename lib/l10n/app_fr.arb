@@ -70,5 +70,10 @@
     "deleteMessageMultiple": "Voulez-vous vraiment supprimer ces éléments?",
     "team": "Équipe",
     "teams": "Équipes",
-    "planning": "À venir"
+    "planning": "À venir",
+    "talks": "Entretiens",
+    "talk": "Entretien",
+    "gender":  "Sexe",
+    "male": "Homme",
+    "female": "Femme"
 }
