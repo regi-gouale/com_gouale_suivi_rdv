@@ -18,7 +18,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     List<String> bottomNavigationBarItemLabels = [
       t(context)!.home,
-      t(context)!.team,
+      t(context)!.collaborators,
       t(context)!.planning,
       t(context)!.profile,
     ];
@@ -35,10 +35,10 @@ class _HomeScreenState extends State<HomeScreen> {
           onPressed: () {},
         ),
         actions: [
-          IconButton(
-            icon: const Icon(Icons.search),
-            onPressed: () {},
-          ),
+          // IconButton(
+          //   icon: const Icon(Icons.search),
+          //   onPressed: () {},
+          // ),
           IconButton(
             icon: const Icon(Icons.more_vert),
             onPressed: () {},
@@ -79,16 +79,16 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           BottomNavigationBarItem(
             icon: const Icon(Icons.group),
-            label: t(context)!.team,
+            label: t(context)!.collaborators,
           ),
-          BottomNavigationBarItem(
-            icon: const Icon(Icons.calendar_month),
-            label: t(context)!.planning,
-          ),
-          BottomNavigationBarItem(
-            icon: const Icon(Icons.person),
-            label: t(context)!.profile,
-          ),
+          // BottomNavigationBarItem(
+          //   icon: const Icon(Icons.calendar_month),
+          //   label: t(context)!.planning,
+          // ),
+          // BottomNavigationBarItem(
+          //   icon: const Icon(Icons.person),
+          //   label: t(context)!.profile,
+          // ),
         ],
         onTap: (value) {
           setState(() {

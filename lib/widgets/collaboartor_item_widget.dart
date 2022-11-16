@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:iger/models/collaboarator_model.dart';
+import 'package:iger/screens/detailed_collaborator_screen.dart';
 import 'package:iger/utils/translate.dart';
 
 class CollaboratorItemWidget extends StatelessWidget {
-  final Collaborator collaborator;
+  final CollaboratorModel collaborator;
   const CollaboratorItemWidget({
     super.key,
     required this.collaborator,
@@ -20,7 +22,15 @@ class CollaboratorItemWidget extends StatelessWidget {
             borderRadius: BorderRadius.circular(12),
           ),
         ),
-        onPressed: () {},
+        onPressed: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => DetailedCollaboratorScreen(
+                collaborator: collaborator,
+              ),
+            ),
+          );
+        },
         child: SizedBox(
           height: 100,
           child: Row(
@@ -56,17 +66,4 @@ class CollaboratorItemWidget extends StatelessWidget {
       ),
     );
   }
-}
-
-class Collaborator {
-  String firstName;
-  String lastName;
-  String gender;
-  int talksNumber = 0;
-
-  Collaborator({
-    required this.firstName,
-    required this.lastName,
-    required this.gender,
-  });
 }
