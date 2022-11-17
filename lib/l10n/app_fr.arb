@@ -84,6 +84,9 @@
     "description": "Description",
     "descriptionHint": "Entrez la description",
     "descriptionRequired": "La description est requise",
+    "keywords": "Mots-clés",
+    "keywordsHint": "Entrez quelques mots-clés pour cet entretien",
+    "keywordsRequired": "Au moins un mot-clé est requis",
     "date": "Date",
     "dateHint": "Entrez la date",
     "dateRequired": "La date est requise",
@@ -100,5 +103,7 @@
     "typeHint": "Entrez le type d'entretien",
     "typeRequired": "Le type d'entretien est requis",
     "addNewTalk": "Ajouter un entretien",
-    "create": "Créer"
+    "create": "Créer",
+    "welcomeDescription": "Bienvenue sur iGer, votre application de gestion des entretiens. Commencez par ajouter un entretien en cliquant sur le bouton ci-dessous.",
+    "welcomeMessage": "Bienvenue sur iGer"
 }

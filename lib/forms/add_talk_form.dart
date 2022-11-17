@@ -132,12 +132,28 @@ class _AddTalkFormState extends State<AddTalkForm> {
               horizontal: 24.0,
               vertical: 4.0,
             ),
-            child: TextFormField(
-              controller: _typeController,
+            child: DropdownButtonFormField(
               decoration: InputDecoration(
                 labelText: t(context)!.type,
                 hintText: t(context)!.typeHint,
               ),
+              items: const [
+                DropdownMenuItem(
+                  value: '1',
+                  child: Text("t(context)!.type1"),
+                ),
+                DropdownMenuItem(
+                  value: '2',
+                  child: Text("t(context)!.type2"),
+                ),
+                DropdownMenuItem(
+                  value: '3',
+                  child: Text("t(context)!.type3"),
+                ),
+              ],
+              onChanged: (value) {
+                _typeController.text = value.toString();
+              },
               validator: (value) {
                 if (value == null || value.isEmpty) {
                   return t(context)!.typeRequired;

@@ -30,10 +30,10 @@ class _HomeScreenState extends State<HomeScreen> {
             title,
           ),
         ),
-        leading: IconButton(
-          icon: const Icon(Icons.person),
-          onPressed: () {},
-        ),
+        // leading: IconButton(
+        //   icon: const Icon(Icons.settings),
+        //   onPressed: () {},
+        // ),
         actions: [
           // IconButton(
           //   icon: const Icon(Icons.search),
@@ -78,13 +78,13 @@ class _HomeScreenState extends State<HomeScreen> {
             label: t(context)!.home,
           ),
           BottomNavigationBarItem(
-            icon: const Icon(Icons.group),
+            icon: const Icon(Icons.groups),
             label: t(context)!.collaborators,
           ),
-          // BottomNavigationBarItem(
-          //   icon: const Icon(Icons.calendar_month),
-          //   label: t(context)!.planning,
-          // ),
+          BottomNavigationBarItem(
+            icon: const Icon(Icons.grid_3x3),
+            label: t(context)!.keywords,
+          ),
           // BottomNavigationBarItem(
           //   icon: const Icon(Icons.person),
           //   label: t(context)!.profile,

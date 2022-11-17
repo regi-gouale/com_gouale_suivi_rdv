@@ -84,6 +84,9 @@
     "description": "Description",
     "descriptionHint": "Enter your description",
     "descriptionRequired": "Description is required",
+    "keywords": "Keywords",
+    "keywordsHint": "Enter some keywords to describe the talk",
+    "keywordsRequired": "At least one keyword is required",
     "date": "Date",
     "dateHint": "Enter your date",
     "dateRequired": "Date is required",
@@ -100,5 +103,7 @@
     "typeHint": "Enter the type of talk",
     "typeRequired": "Type is required",
     "addNewTalk": "Add new talk",
-    "create": "Create"
+    "create": "Create",
+    "welcomeDescription": "Welcome to iGer, the app that helps you manage your talks.",
+    "welcomeMessage": "To get started, you can add a new talk or view your existing talks."
 }
